@@ -1,6 +1,5 @@
 package com.ahmednmahran.common.data.model
 
-import com.github.ahmednmahran.common.model.ChatUser
 import kotlinx.serialization.Serializable
 
 @Serializable

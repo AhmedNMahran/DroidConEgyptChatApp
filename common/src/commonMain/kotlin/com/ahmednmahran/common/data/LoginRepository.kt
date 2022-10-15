@@ -2,7 +2,7 @@ package com.ahmednmahran.common.data
 
 import com.ahmednmahran.common.data.network.Network
 import com.ahmednmahran.common.data.network.Network.client
-import com.github.ahmednmahran.common.model.ChatUser
+import com.ahmednmahran.common.data.model.ChatUser
 import io.ktor.client.plugins.auth.*
 import io.ktor.client.plugins.auth.providers.*
 import io.ktor.client.request.*

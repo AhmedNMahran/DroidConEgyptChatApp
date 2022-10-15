@@ -11,7 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
-import com.github.ahmednmahran.common.model.ChatUser
+import com.ahmednmahran.common.data.model.ChatUser
 
 @Composable
 fun LoginScreen(modifier: Modifier = Modifier,

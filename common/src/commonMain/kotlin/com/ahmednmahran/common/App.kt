@@ -12,7 +12,7 @@ import androidx.compose.ui.unit.dp
 import com.ahmednmahran.common.data.LoginRepository
 import com.ahmednmahran.common.ui.chat.ChatScreen
 import com.ahmednmahran.common.ui.loginscreen.LoginScreen
-import com.github.ahmednmahran.common.model.ChatUser
+import com.ahmednmahran.common.data.model.ChatUser
 
 @Composable
 fun App(modifier: Modifier = Modifier, loginRepository: LoginRepository = LoginRepository()) {

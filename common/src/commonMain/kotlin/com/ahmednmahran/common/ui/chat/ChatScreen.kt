@@ -3,7 +3,7 @@ package com.ahmednmahran.common.ui.chat
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
-import com.github.ahmednmahran.common.model.ChatUser
+import com.ahmednmahran.common.data.model.ChatUser
 import com.ahmednmahran.common.ui.ProfileInfo
 
 
@@ -14,6 +14,7 @@ import com.ahmednmahran.common.ui.ProfileInfo
 fun ChatScreen(user: MutableState<ChatUser>) {
     Column {
         ProfileInfo(user)
+
     }
 
 }

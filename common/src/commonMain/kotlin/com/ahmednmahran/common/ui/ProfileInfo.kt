@@ -13,7 +13,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import com.ahmednmahran.common.ProfileImage
-import com.github.ahmednmahran.common.model.ChatUser
+import com.ahmednmahran.common.data.model.ChatUser
 
 /**
  * composable to show Profile Info

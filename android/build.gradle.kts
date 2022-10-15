@@ -21,6 +21,12 @@ dependencies {
 }
 
 android {
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.2.0"
+    }
     compileSdk = 33
     defaultConfig {
         applicationId = "com.ahmednmahran.android"

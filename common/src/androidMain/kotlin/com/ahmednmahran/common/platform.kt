@@ -17,6 +17,6 @@ actual fun ProfileImage(modifier: Modifier, url: String) {
     AsyncImage(
         model = url,
         contentDescription = null,
-        modifier = Modifier
+        modifier = modifier
     )
 }

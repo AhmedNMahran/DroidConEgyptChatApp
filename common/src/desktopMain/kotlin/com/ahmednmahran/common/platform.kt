@@ -35,7 +35,7 @@ actual fun ProfileImage(modifier: Modifier, url: String) {
         Image(
             bitmap = image.value!!,
             contentDescription = null,
-            modifier = Modifier,
+            modifier = modifier,
             contentScale = ContentScale.Fit
         )
     }

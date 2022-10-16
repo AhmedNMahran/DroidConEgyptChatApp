@@ -16,11 +16,11 @@ import com.ahmednmahran.common.data.model.ChatUser
 
 @Composable
 fun App(modifier: Modifier = Modifier, loginRepository: LoginRepository = LoginRepository()) {
-    val chatUser = loginRepository.user.collectAsState()
+    val chatUser = loginRepository.user.collectAsState().value
     Surface {
 
         Box {
-            if (chatUser.value.username.isBlank()) {
+            if (chatUser.username.isBlank()) {
                 LoginScreen(
                     modifier.padding(32.dp).wrapContentSize(Alignment.Center).background(
                         color = Color(204, 153, 255),
@@ -32,7 +32,7 @@ fun App(modifier: Modifier = Modifier, loginRepository: LoginRepository = LoginR
                 }
             }
             else{
-                ChatScreen(chatUser as MutableState<ChatUser>)
+                ChatScreen(remember {  mutableStateOf( chatUser)})
             }
         }
     }

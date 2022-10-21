@@ -1,5 +1,6 @@
 package com.ahmednmahran.common.ui
 
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.Card
@@ -20,12 +21,19 @@ import com.ahmednmahran.common.data.model.ChatUser
  */
 @Composable
 fun ProfileInfo(user: MutableState<ChatUser>) {
-    Card(elevation = 16.dp, modifier = Modifier.padding(16.dp)) {
+    Card(elevation = 16.dp, modifier = Modifier.padding(16.dp).height(80.dp)) {
         Row(
             modifier = Modifier.padding(16.dp).fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            ProfileImage(Modifier.clip(CircleShape), user.value.profileImageUrl!!)
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape)
+                    .border(1.5.dp, MaterialTheme.colors.primary, CircleShape)
+            ){
+                ProfileImage(Modifier, user.value.profileImageUrl!!)
+            }
             Spacer(modifier = Modifier.size(8.dp))
             Text(
                 text = user.value.username,
